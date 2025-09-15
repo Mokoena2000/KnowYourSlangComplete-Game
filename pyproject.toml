@@ -1,0 +1,25 @@
+[tool.briefcase]
+project_name = "Know Your Slang"
+bundle = "za.co.mocodes"
+version = "0.1.0"
+url = "https://example.com/know-your-slang"
+license = "MIT license"
+author = "Mo Codes"
+author_email = "dev@example.com"
+
+[tool.briefcase.app.know-your-slang]
+formal_name = "Know Your Slang"
+description = "A South African slang quiz game."
+icon = "assets/ks_icon"
+sources = ["src/know_your_slang"]
+requires = [
+    "toga>=0.4.7", 
+    "websockets>=11.0.3",
+]
+test_requires = []
+
+[tool.briefcase.app.know-your-slang.iOS]
+requires = []
+
+[tool.briefcase.app.know-your-slang.android]
+requires = []
